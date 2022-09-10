@@ -1,0 +1,732 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Regular"), url("../Fonts/roboto-regular-webfont.woff2") format("woff2"), url("../Fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Bold"), url("../Fonts/roboto-bold-webfont.woff2") format("woff2"), url("../Fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Global */
+.container {
+
+  max-width: 1440px;
+  padding: 0 165px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.list-reset {
+
+  padding: 0;
+  list-style: none;
+
+}
+
+:root {
+  --blue: #3F2AFF;
+  --white: #ffffff;
+  --violet: #2E2B44;
+  --md-grey: #666666;
+  --grey: #85859B;
+  --dark-violet: #212133;
+  --light-blue: #EDF0F9;
+}
+
+/* Header */
+.header__container {
+  background: var(--blue);
+  height: 80px;
+
+}
+
+.header__nav-list {
+  justify-content: end;
+}
+
+.header__nav-list-item-link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white);
+
+}
+
+.header__nav-list-item:not(:last-child) {
+  padding: 0 30px;
+}
+
+
+.header__logo {
+  margin-left: -12px;
+}
+
+.close-burger {
+  display: none;
+}
+
+.header__burger-menu {
+  display: none;
+}
+
+/* hero */
+.hero__container {
+
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.hero__left {
+  padding: 130px 0px 130px 0;
+
+
+}
+
+.hero__left-content-title {
+
+  max-width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 100%;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero__left-content-descr {
+  width: 100%;
+  max-width: 440px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 63px;
+}
+
+.hero__left-content-btn {
+  padding: 24px 75.5px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hero__right {
+
+  display: flex;
+  align-items: center;
+}
+
+.hero__right-bg {
+
+  width: 100%;
+
+  margin-left: -3px;
+  margin-top: 16px;
+}
+
+/* advan */
+.advan__skill {
+  margin-bottom: -5px;
+}
+
+.advan-img-bg {
+  background-image: url('../img/advanbg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+
+}
+
+
+
+.advan__skill-content-title {
+  max-width: 380px;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: var(--violet);
+}
+
+.advan__skill-content-descr {
+  max-width: 561px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--md-grey);
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+
+
+
+
+.advan__list-item-descr {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--md-grey);
+  max-width: 242px;
+  margin-top: 0;
+}
+
+.advan__list-item {
+  display: flex;
+  align-items: center;
+
+  background-repeat: no-repeat;
+
+  padding-top: 11px;
+  padding-left: 109px;
+}
+
+
+
+
+.advan1 {
+  background-image: url('../img/advan1.svg');
+}
+
+.advan2 {
+  background-image: url('../img/advan2.svg');
+}
+
+.advan3 {
+  background-image: url('../img/advan3.svg');
+}
+
+.advan__list {
+  margin-bottom: -14px;
+}
+
+/* Teachers */
+.teachers__container {
+  background: var(--dark-violet);
+  padding: 39px 169px;
+}
+
+
+.teachers__title {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 100%;
+  color: var(--white);
+  margin-top: 38px;
+}
+
+
+
+
+/* .teachers__list-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
+
+.teachers__img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.teachers__list-item-content {
+  margin-top: 30px;
+  max-width: 254px;
+}
+
+.teachers__list-item-content-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white);
+  margin-top: -8px;
+  margin-bottom: 24px;
+}
+
+
+
+
+
+.teachers__list-item-content-descr {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--grey);
+  /* margin-top: -19px;
+  margin-bottom: 35px; */
+}
+
+
+
+
+/* course */
+.course__container {
+  padding-right: 145px;
+}
+
+.course__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--dark-violet);
+  margin-top: -5px;
+  margin-bottom: 38px;
+}
+
+.course__list {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.course__item-img {
+  margin-top: -12px;
+  background: var(--light-blue);
+}
+
+.course__list-content {
+  /* max-width: 539px; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: var(--light-blue);
+  border-radius: 0 0 20px 20px;
+}
+
+.course__list-content-title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  color: var(--dark-violet);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.course__list-content-descr {
+  max-width: 445px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--md-grey);
+
+  min-height: 100px;
+  margin-bottom: 48px;
+
+}
+
+.course__list-content-btn {
+  max-width: max-content;
+  padding: 20.5px 59px;
+  background: var(--blue);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  margin-top: auto;
+}
+
+
+
+.course__list-item {
+  max-width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+}
+
+/* .course__list-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+} */
+/* Footer */
+.footer {
+  background: var(--violet);
+  padding: 28px 0;
+  margin-top: -45px;
+}
+
+.footer__soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__soc-item {
+  display: block;
+  height: 24px;
+  width: 24px;
+
+
+}
+
+.footer__soc-item:not(:last-child) {
+  margin-right: 30px;
+
+}
+
+.footer__end {
+  padding: 0;
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+
+/* Media */
+
+@media (max-width:1300px) {
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  .hero__left-content-title {
+    font-size: 48px;
+    line-height: 94%;
+    margin-bottom: 24px;
+  }
+
+  .hero__left-content-descr {
+    width: 331px;
+    margin-bottom: 68px;
+
+  }
+
+  .hero__left {
+    padding: 130px 0 136px 0;
+  }
+
+  /* advan */
+  .advan__skill-content-title {
+    max-width: 380px;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 98%;
+    margin-top: -7px;
+    margin-bottom: 19px;
+    color: var(--violet);
+  }
+
+  .advan__skill-content-descr {
+    max-width: 561px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 153%;
+    color: var(--md-grey);
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  /* teachers */
+  .teachers__title {
+    margin-bottom: 25px;
+  }
+
+  .teachers__list-item-content {
+    max-width: none;
+  }
+
+  .teachers__list-item-content-name {
+    margin-top: 3px;
+    margin-bottom: -7px;
+  }
+
+  /* course */
+  .course__title {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 97%;
+    color: var(--dark-violet);
+    margin-top: -5px;
+    margin-bottom: 34px;
+  }
+
+  .course__list-item {
+    margin-bottom: 50px;
+  }
+
+  .course__list-content-btn {
+    margin-bottom: -18px;
+  }
+
+  /* footer */
+  .footer {
+    margin-top: -38px;
+    padding-top: 19px;
+    padding-bottom: 13px;
+
+  }
+}
+
+@media (max-width:995px) {
+  .advan__list-item {
+
+    padding-top: 90px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .container {
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  /* header */
+  .header__container {
+    height: 133px;
+    padding: 30px 63px;
+
+  }
+
+  .header__logo {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .header__nav-list {
+    justify-content: center;
+  }
+
+
+  /* hero */
+
+  .hero__right {
+    display: none;
+  }
+
+  .hero__left {
+    padding: 77px 0px 130px 0;
+  }
+
+  /* advan */
+  .advan__skill-content-title {
+    margin-bottom: 14px;
+    margin-top: 7px;
+  }
+
+  .advan__skill-content-descr {
+    font-size: 16px;
+    margin-bottom: 11px;
+  }
+
+  .advan__list-item {
+    padding-top: 90px;
+    padding-left: 3px;
+
+  }
+
+  .advan__list {
+    margin-bottom: -40px;
+  }
+
+}
+
+@media (max-width:575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Header */
+  .header {
+    position: relative;
+  }
+
+  .header__container {
+
+    height: 115px;
+
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .close-burger {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 15px;
+  }
+  .header__burger-menu {
+
+    display: inline-block;
+
+  }
+
+  .header__nav.active {
+    transform: none;
+  }
+  .header__nav {
+
+    transform: none;
+    position: absolute;
+    z-index: 150;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 637px;
+
+    background-color: var(--dark-violet);
+    transition: transform .4s ease;
+    transform: translateX(-101%);
+    padding: 76px 173px 105px 15px;
+
+
+  }
+  .header__nav-list {
+  flex-direction: column;
+
+  }
+  .header__nav-list-item {
+    margin-bottom: 56px;
+
+  }
+  .header__nav-list-item:last-child {
+    margin-left: 30px;
+  }
+  .header__nav-list-item-link {
+    font-weight: 400;
+font-size: 20px;
+line-height: 21px;
+  }
+  /* hero */
+  .hero__left {
+    padding: 70px 0px 75px 0;
+  }
+
+  .hero__left-content-title {
+    margin-bottom: 6px;
+    font-size: 43px;
+    line-height: 109%;
+  }
+
+  .hero__left-content-descr {
+    width: 100%;
+    font-size: 24px;
+    line-height: 134%;
+  }
+
+  .hero__left-content-btn {
+    padding: 33px 84.5px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 21px;
+  }
+
+  /* advan */
+  .advan__skill-content-title {
+    font-size: 29px;
+    line-height: 115%;
+
+    margin-bottom: 7px;
+    margin-top: 1px;
+  }
+
+  .advan__skill-content-descr {
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  .advan__list-item {
+    padding-top: 0;
+    padding-left: 172px;
+    margin-bottom: 47px;
+    background-size: contain;
+  }
+
+  .advan__list-item-descr {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 115%;
+  }
+
+  /* teach */
+  .teachers__title {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 100%;
+    color: var(--white);
+    margin-top: 35px;
+    margin-bottom: 42px;
+  }
+
+  .teachers__list-item {
+    margin-bottom: 30px;
+  }
+
+  .teachers__list-item-content {
+    max-width: 379px;
+
+  }
+
+  .teachers__list-item-content-name {
+    font-size: 25px;
+    margin-top: -7px;
+    margin-bottom: -3px;
+  }
+
+  .teachers__list-item-content-descr {
+    font-size: 22px;
+    line-height: 150%;
+
+  }
+}
